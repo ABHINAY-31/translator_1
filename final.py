@@ -16,6 +16,20 @@ auth=firebase.auth()
 db=firebase.database()
 choice=int(input("1. Sign Up   or    2. Login \nEnter your choice: "))
 if(choice==1):
+        import pyrebase
+        config = {
+        "apiKey": "AIzaSyBwppANSiabJpBpV7AfkvfmtraSV9RKxoU",
+        "authDomain": "translator-346404.firebaseapp.com",
+        "databaseURL": "https://translator-346404-default-rtdb.asia-southeast1.firebasedatabase.app/",
+        "projectId": "translator-346404",
+        "storageBucket": "translator-346404.appspot.com",
+        "messagingSenderId": "576845837678",
+        "appId": "1:576845837678:web:0a37f5b036be2e026ffd7f",
+        "measurementId": "G-PXQTPYMXTC"
+        }
+        firebase=pyrebase.initialize_app(config)
+        auth=firebase.auth()
+        db=firebase.database()
         while(1):
             id=input("enter the unique id: ")
             userdata=db.child("Info/UserData").get()
@@ -30,6 +44,7 @@ if(choice==1):
                 continue
             else:
                 break
+      
         Name=input("Enter the Name: ")
         while(1):
           Email=input("Enter the Email: ")
