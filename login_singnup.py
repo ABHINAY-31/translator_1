@@ -1,13 +1,6 @@
 import pyrebase
 config = {
-    "apiKey": "AIzaSyBwppANSiabJpBpV7AfkvfmtraSV9RKxoU",
-    "authDomain": "translator-346404.firebaseapp.com",
-    "databaseURL": "https://translator-346404-default-rtdb.asia-southeast1.firebasedatabase.app/",
-    "projectId": "translator-346404",
-    "storageBucket": "translator-346404.appspot.com",
-    "messagingSenderId": "576845837678",
-    "appId": "1:576845837678:web:0a37f5b036be2e026ffd7f",
-    "measurementId": "G-PXQTPYMXTC"
+    
 }
 firebase=pyrebase.initialize_app(config)
 auth=firebase.auth()

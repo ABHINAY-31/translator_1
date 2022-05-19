@@ -6,7 +6,7 @@ from google.cloud import vision_v1
 from deep_translator import GoogleTranslator 
 from langdetect import detect
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'api_json_file/translator-346404-9fadb5fe6cc1.json'
+os.environ[''] = r''
 def langs():
     lang_file=open("D:\Project\language_support.txt","r")
     target_language=input("enter the name of language(like: Hindi): ");

@@ -7,7 +7,7 @@ from google.cloud import vision_v1
 from google.cloud import texttospeech_v1 #cloud api
 from tkinter import ttk
 #pip install google-cloud
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'api_json_file/translator-346404-9fadb5fe6cc1.json'
+os.environ[''] = r''
 def detect_text(path):
     """Detects text in the file."""
     client = vision_v1.ImageAnnotatorClient()

@@ -10,16 +10,7 @@ from deep_translator import GoogleTranslator
 from langdetect import detect
 import pyrebase
 config = {
-    "apiKey": "AIzaSyBwppANSiabJpBpV7AfkvfmtraSV9RKxoU",
-    "authDomain": "translator-346404.firebaseapp.com",
-    "databaseURL": "https://translator-346404-default-rtdb.asia-southeast1.firebasedatabase.app/",
-    "projectId": "translator-346404",
-    "storageBucket": "translator-346404.appspot.com",
-    "messagingSenderId": "576845837678",
-    "appId": "1:576845837678:web:0a37f5b036be2e026ffd7f",
-    "measurementId": "G-PXQTPYMXTC",
-    "serviceAccount": "key.json",
-    "databaseURL": "gs://translator-346404.appspot.com" 
+    
 }
 firebase=pyrebase.initialize_app(config)
 auth=firebase.auth()
@@ -68,9 +59,7 @@ def langs():
           return l[len(l)-1]
 
 def openfile():
-    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'api_json_file/translator-346404-9fadb5fe6cc1.json'#cloud vision
-    #os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'translator-346404-9711a44a0c12.json'#translater api
-    #os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'translator-346404-3378f489c654.json'#texttospeech
+    os.environ[''] = r''#cloud vision
     client = vision.ImageAnnotatorClient()
 
     extensions = ("*.jpg", "*.png", "*.jpeg")
